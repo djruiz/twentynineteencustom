@@ -46,6 +46,10 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
+				<a href="https://www.linkedin.com/company/content-cucumber" class="fa fa-linkedin"></a>
+				<a href="https://www.facebook.com/CucumberContent/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/contentcucumber?lang=en" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/contentcucumber/?hl=en" class="fa fa-instagram"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

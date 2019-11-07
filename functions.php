@@ -321,3 +321,46 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+function tnc_custom_logo(){
+	$defaults = array(
+	'height'      => 1000,
+	'width'       => 1000,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+	);
+	add_theme_support( 'custom-logo', $defaults );
+}
+
+add_action("after_setup_theme", "tnc_custom_logo");
+
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+	global $post;
+ return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+add_action('wp_footer', 'my_home_page_styles', PHP_INT_MAX);
+function my_home_page_styles() {
+    if(is_front_page()) {
+    ?>
+    <style>
+    
+    </style>
+    <?php
+    }
+}

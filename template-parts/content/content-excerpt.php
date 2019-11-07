@@ -25,6 +25,7 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<a class="read-more-button" href="<?php echo get_permalink(); ?>"> Read More</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
