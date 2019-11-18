@@ -20,8 +20,9 @@ get_header();
 			<header class="page-header">
 				<h1 class="page-title">
 					<?php _e( 'Search results for:', 'twentynineteen' ); ?>
+					<div class="page-description"><?php echo get_search_query(); ?></div>
 				</h1>
-				<div class="page-description"><?php echo get_search_query(); ?></div>
+				
 			</header><!-- .page-header -->
 
 			<?php

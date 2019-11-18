@@ -53,6 +53,39 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/* label color */
+.input-field label {
+  color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #58c558;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #58c558;
+  box-shadow: 0 1px 0 0 #58c558;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #58c558;
+}
+
 /*
  * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
  * This results in a jumping cursor when typing in both the Classic and block
@@ -2548,6 +2581,10 @@ a:focus {
 /** === Main menu === */
 #site-navigation {
   color: white !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .main-navigation {
@@ -4011,6 +4048,11 @@ body.page .main-navigation {
   color: white !important;
   padding: 5px;
   border-radius: 10%;
+  font-size: 20px;
+}
+
+#mission {
+  padding: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -4381,6 +4423,7 @@ body.page .main-navigation {
 .search .page-header,
 .error404 .page-header {
   margin: 1rem 1rem calc(3 * 1rem);
+  margin-bottom: 0px !important;
 }
 @media only screen and (min-width: 768px) {
   .archive .page-header,
