@@ -16,7 +16,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
+		<?php //get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
 			<?php $blog_info = get_bloginfo( 'name' ); ?>
 			<?php if ( ! empty( $blog_info ) ) : ?>
@@ -48,7 +48,21 @@
 				<a href="https://www.instagram.com/contentcucumber/?hl=en" class="fa fa-instagram"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+<style>body {
+        font-family: 'GlacialIndifferenceRegular';
+    }
 
+    section#recent-posts-2.widget.widget_recent_entries ul li a {
+        color: green !important;
+    }
+    
+    section#archives-2.widget.widget_archive ul li a {
+        color: green !important;
+    }
+    section#meta-2.widget.widget_meta ul li a {
+        color: green !important;
+    }
+</style>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

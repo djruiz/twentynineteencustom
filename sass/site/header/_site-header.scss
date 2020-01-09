@@ -1,4 +1,12 @@
 // Site header
+
+#menu-header {
+  padding: 25px;
+  margin: 25px;
+}
+html {
+  margin: 0 !important;
+}
 .site-header {
   padding: 1em;
 
@@ -55,7 +63,7 @@
     height: 100px;
     overflow: hidden;
     transition: box-shadow $background_transition ease-in-out;
-    float: left;
+    float: right;
 
     &:hover,
     &:active,

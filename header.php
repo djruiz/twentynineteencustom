@@ -18,6 +18,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+<style>
+ body {
+        font-family: 'GlacialIndifferenceRegular';
+    }
+
+    section#recent-posts-2.widget.widget_recent_entries ul li a {
+        color: green !important;
+    }
+    
+    section#archives-2.widget.widget_archive ul li a {
+        color: green !important;
+    }
+    section#meta-2.widget.widget_meta ul li a {
+        color: green !important;
+	}
+	
+	
+	</style>
+
 	<?php wp_head(); ?>
 
 </head>
@@ -54,3 +80,4 @@
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+	

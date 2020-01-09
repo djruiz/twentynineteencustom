@@ -51,5 +51,12 @@
 	<?php if ( ! is_singular( 'attachment' ) ) : ?>
 		<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>
 	<?php endif; ?>
-
+<style>
+#content {
+	margin-top: 0;
+}
+body main a {
+	color: hsl( 115, 100%, 33% ) !important;
+}
+</style>
 </article><!-- #post-<?php the_ID(); ?> -->

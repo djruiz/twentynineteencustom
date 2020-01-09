@@ -17,6 +17,26 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7', '<' ) ) {
 	return;
 }
 
+/*
+// Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'movies',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Testimonials' ),
+                'singular_name' => __( 'Testimonial' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'Testimonials'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+*/
 if ( ! function_exists( 'twentynineteen_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -364,3 +384,4 @@ function my_home_page_styles() {
     <?php
     }
 }
+?>

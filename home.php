@@ -16,9 +16,10 @@
 
 get_header();
 ?>
-
-	
-	<section id="primary" class="content-area">
+<div class="container">
+	<div class="row">
+		<div id="posts" class="col s8 left-align">
+		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php
 		if ( have_posts() ) {
@@ -39,9 +40,20 @@ get_header();
 
 		}
 		?>
-
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
+		</div>
+		<div id="sidebar" style="margin-top: 25px;" class="col s4">
+			<?php
+				//get_template_part( 'template-parts/footer/footer', 'widgets' );
+				get_template_part('template-parts/sidebar/sidebar');
+			?>
+		</div>
+	</div>
+</div>
+
+	
 
 <?php
 get_footer();
+?>
