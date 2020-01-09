@@ -208,10 +208,10 @@ function twentynineteen_widgets_init() {
 			'name'          => __( 'Footer', 'twentynineteen' ),
 			'id'            => 'sidebar-1',
 			'description'   => __( 'Add widgets here to appear in your footer.', 'twentynineteen' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_widget' => '<div class="card"><div class="card-content"><section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section></div></div>',
+			'before_title'  => '<div class="card-title><h5 class="widget-title">',
+			'after_title'   => '</h5></div>',
 		)
 	);
 
