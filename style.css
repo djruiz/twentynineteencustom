@@ -2553,6 +2553,8 @@ a:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   background: transparent;
+  display: flex;
+  align-items: center;
 }
 
 .main-navigation {
@@ -3343,11 +3345,6 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-#menu-header {
-  padding: 25px;
-  margin: 25px;
-}
-
 html {
   margin: 0 !important;
 }

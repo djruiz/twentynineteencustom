@@ -43,7 +43,7 @@ get_header();
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 		</div>
-		<div id="sidebar" style="margin-top: 25px;" class="col s4">
+		<div id="sidebar" style="" class="col s4">
 			<?php
 				//get_template_part( 'template-parts/footer/footer', 'widgets' );
 				get_template_part('template-parts/sidebar/sidebar');

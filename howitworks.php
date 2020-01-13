@@ -50,6 +50,7 @@ get_header();
             <div style="margin-top: 80px" class="row center-align">
                 <h3>Hire a writer for $490/Month </h3>
                 <p>Get a dedicated writer. Request written content. Make unlimited requests and revisions. </p>
+                <iframe width="100%" height="543" src="https://www.youtube.com/embed/ba2MUHESdw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <ul class="collapsible">
     <li>
       <div class="collapsible-header">
@@ -216,9 +217,7 @@ body {
       padding: 25px;
     }
 
-    #colophon{
-      display: none;
-    }
+    
   
 </style>
 
@@ -226,19 +225,3 @@ body {
 <?php
 get_footer();
 ?>
-<footer class="green darken-2" style=" height: 100px;">
-    <div class="container" style="color: white !important;">
-    <div class="row" style="padding: 10px; 30px; margin-bottom: 0;">
-        <div class="col s8">
-        <h4>Content Cucumber</h4>
-        </div>
-
-        <div class="col s4 right-align" style="margin-top: 30px;">
-        <a style="margin: 0 2.5px; color: white;" href="https://www.linkedin.com/company/content-cucumber" class="fa fa-linkedin"></a>
-		<a style="margin: 0 2.5px;color: white;" href="https://www.facebook.com/CucumberContent/" class="fa fa-facebook"></a>
-        <a style="margin: 0 2.5px;color: white;" href="https://twitter.com/contentcucumber?lang=en" class="fa fa-twitter"></a>
-        <a style="margin: 0 10px 0 2.5px; color: white;" href="https://www.instagram.com/contentcucumber/?hl=en" class="fa fa-instagram"></a>
-        </div> 
-    
-  
-</footer>

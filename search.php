@@ -1,8 +1,13 @@
 <?php
 /**
- * The template for displaying search results pages
+ * The main template file
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
  * @subpackage Twenty_Nineteen
@@ -11,46 +16,48 @@
 
 get_header();
 ?>
-
-	<section id="primary" class="content-area">
+<div class="container">
+<div style="margin: 20px;" class="query">
+	<?php _e( 'Search results for:', 'twentynineteen' ); ?>
+	<div class="page-description"><?php echo get_search_query(); ?></div>
+</div>
+	<div class="row">
+		<div id="posts" class="col s8 left-align">
+		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<?php
+		if ( have_posts() ) {
 
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php _e( 'Search results for:', 'twentynineteen' ); ?>
-					<div class="page-description"><?php echo get_search_query(); ?></div>
-				</h1>
-				
-			</header><!-- .page-header -->
-
-			<?php
-			// Start the Loop.
-			while ( have_posts() ) :
+			// Load posts loop.
+			while ( have_posts() ) {
 				the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content/content', 'excerpt' );
-
-				// End the loop.
-			endwhile;
+				get_template_part( 'template-parts/content/content-excerpt' );
+			}
 
 			// Previous/next page navigation.
 			twentynineteen_the_posts_navigation();
 
+		} else {
+
 			// If no content, include the "No posts found" template.
-		else :
 			get_template_part( 'template-parts/content/content', 'none' );
 
-		endif;
+		}
 		?>
-		</main><!-- #main -->
-	</section><!-- #primary -->
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+		</div>
+		<div id="sidebar" style="" class="col s4">
+			<?php
+				//get_template_part( 'template-parts/footer/footer', 'widgets' );
+				get_template_part('template-parts/sidebar/sidebar');
+			?>
+		</div>
+	</div>
+</div>
+
+	
 
 <?php
 get_footer();
+?>

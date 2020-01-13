@@ -5,6 +5,8 @@
   -moz-box-shadow: none;
   box-shadow: none;
   background: transparent;
+  display: flex;
+  align-items: center;
 }
 .main-navigation {
   margin-top: #{0.25 * $size__spacing-unit};

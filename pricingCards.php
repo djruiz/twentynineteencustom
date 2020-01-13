@@ -42,7 +42,7 @@ get_header();
         
         <div  class="card-content center">
             <h4 class=''><small>$</small>490 per Month</h4>
-            <a class="btn green" href = "javascript:void(0)"  data-cb-type = "checkout"  data-cb-plan-id = "content-cucumber-subscription" > Sign Up Now </a>
+            <a style="margin: 30px 0;" class="btn green darken-2" href = "javascript:void(0)"  data-cb-type = "checkout"  data-cb-plan-id = "content-cucumber-subscription" > Sign Up Now </a>
             </div>
         <div class="row">
                 <div class="col s12 m4">
@@ -111,16 +111,16 @@ get_header();
       <div class="col">
         <h5>
         Content Cucumber has helped over 100 businesses write awesome blogs. Schedule a demo today to learn how we can help you! 
-        </h5></div>
+        </h5>
+        <p style="margin: 30px 0;"><a href="https://calendly.com/chriscucumber/30min" class="btn green darken-2 read-more-button">Schedule a Demo</a></p>
+      </div>
     </div>
     <style>
       .pricing-icons{
         height: 75px;
         width: 75px;
       }
-      #colophon {
-        display: none;
-      }
+      
       </style>
     
     
@@ -173,24 +173,6 @@ get_header();
     <?php
 get_footer();
 ?>
-<footer class="green darken-2" style=" height: 100px;">
-    <div class="container" style="color: white !important;">
-    <div class="row" style="padding: 10px; 30px; margin-bottom: 0;">
-        <div class="col s8">
-        <h4>Content Cucumber</h4>
-        </div>
-
-        <div class="col s4 right-align" style="margin-top: 30px;">
-        <a style="margin: 0 2.5px; color: white;" href="https://www.linkedin.com/company/content-cucumber" class="fa fa-linkedin"></a>
-		<a style="margin: 0 2.5px;color: white;" href="https://www.facebook.com/CucumberContent/" class="fa fa-facebook"></a>
-        <a style="margin: 0 2.5px;color: white;" href="https://twitter.com/contentcucumber?lang=en" class="fa fa-twitter"></a>
-        <a style="margin: 0 10px 0 2.5px; color: white;" href="https://www.instagram.com/contentcucumber/?hl=en" class="fa fa-instagram"></a>
-        </div> 
-    
-  
-</footer>
-
-  
 </div>
 
 <style>

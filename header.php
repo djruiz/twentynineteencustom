@@ -31,14 +31,25 @@
     }
 
     section#recent-posts-2.widget.widget_recent_entries ul li a {
-        color: green !important;
+		color: green !important;
+		font-size: 12px !important;
+		font-family: 'GlacialIndifferenceRegular';
     }
     
     section#archives-2.widget.widget_archive ul li a {
-        color: green !important;
+		color: green !important;
+		font-size: 12px !important;
+		font-family: 'GlacialIndifferenceRegular';
     }
     section#meta-2.widget.widget_meta ul li a {
-        color: green !important;
+		color: green !important;
+		font-size: 12px !important;
+		font-family: 'GlacialIndifferenceRegular';
+	}
+	section#categories-2.widget_categories ul li a {
+		color: green !important;
+		font-size: 12px !important;
+		font-family: 'GlacialIndifferenceRegular';
 	}
 	
 	
@@ -79,5 +90,5 @@
 			<?php endif; ?>
 		</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div class="site-content">
 	

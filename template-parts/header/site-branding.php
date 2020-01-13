@@ -23,33 +23,56 @@
       </script>
 	</head>
 	
-<div class="site-branding">
+<div class="navigation green darken-2">
+		<div style="margin-left: 20px;" class="toggle-icon">
+		<a href="http://localhost/wordpress/" class="">
+			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
+				<i style="text-decoration: none;" class="white-text material-icons medium">menu</i>
+			</a>
+		</div>
+		<div class="">
+		<!-- <img class="img-logo" src="http://localhost/wordpress/wp-content/uploads/2019/12/CC-Logo-with-Words.png" style="margin: 10px; width: 250px; height: 100px;" alt="">-->
+		<?php
+			$custom_logo_id = get_theme_mod( 'custom_logo' );
+			$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+			echo '<img class="site-logo" src="' . esc_url( $custom_logo_url ) . '" style="margin: 10px; width: 250px; height: 100px;"alt="">';?>
+		</a>
+		</div>
+		<div class="nav-links">
 
-	<?php /* if ( has_custom_logo() ) : ?>
-		<div class="site-logo"><?php the_custom_logo(); ?></div>
-	<?php endif; ?>
-	<?php $blog_info = get_bloginfo( 'name' ); ?>
-	
-
-	*/
-	?>
-
-	<?php /* if ( has_nav_menu( 'social' ) ) : ?>
-		<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
+			<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+			<nav id="site-navigation" class="site-nav" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'social',
-					'menu_class'     => 'social-links-menu',
-					'link_before'    => '<span class="screen-reader-text">',
-					'link_after'     => '</span>' . twentynineteen_get_icon_svg( 'link' ),
-					'depth'          => 1,
-				)
-			);
+				wp_nav_menu(
+					array(
+						'theme_location' => '',
+						'menu_class'     => '',
+						'link_before'    => '',
+						'link_after'     => '',
+						'depth'          => 1,
+						'container'      => 'ul',
+						'container_class' => 'right hide-on-med-and-down',
+						'items_wrap'      =>'<ul id="%1$s" class="white-text">%3$s</ul>'
+
+					)
+				);
 			?>
-		</nav><!-- .social-navigation -->
-	<?php endif; */?>
-</div><!-- .site-branding -->
+			<?php endif; ?>
+		</div>
+</div>
+
+<style>
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+</style>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -58,54 +81,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-<nav class="navbar-fixed green darken-2" style="height: 125px; padding:0px 10px; position: fixed;">
-
-<div class="nav-wrapper">
-	
-		
-		<a href="http://localhost/wordpress/" class="brand-logo">
-		<!-- <img class="img-logo" src="http://localhost/wordpress/wp-content/uploads/2019/12/CC-Logo-with-Words.png" style="margin: 10px; width: 250px; height: 100px;" alt="">-->
-		<?php
-		$custom_logo_id = get_theme_mod( 'custom_logo' );
-		$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-		echo '<img class="site-logo" src="' . esc_url( $custom_logo_url ) . '" style="margin: 10px; width: 250px; height: 100px;"alt="">';?>
-	</a>
-
-		<a href="#" class="sidenav-trigger" data-target="mobile-nav">
-			<i style="text-decoration: none;" class="white-text material-icons">menu</i>
-		</a>
-
-		<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-		<nav id="site-navigation" class="site-nav" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => '',
-					'menu_class'     => '',
-					'link_before'    => '',
-					'link_after'     => '',
-					'depth'          => 1,
-					'container'      => 'ul',
-					'container_class' => 'right hide-on-med-and-down',
-					'items_wrap'      =>'<ul id="%1$s" class="white-text">%3$s</ul>'
-
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	<?php endif; ?>
-		<ul class="right hide-on-med-and-down" style="padding: 25px 100px;" >
-		<!--
-			<li><a class="white-text" href="http://localhost/wordpress/">Home</a></li>
-			<li><a class="white-text" href="http://localhost/wordpress/blog/">Blog</a></li>
-			<li><a class="white-text" href="http://localhost/wordpress/pricing/test/">Pricing</a></li>
-			<li><a class="white-text" href="http://localhost/wordpress/affiliates/">Affililates</a></li>
-		-->
-		</ul>
-	
-</nav>
 
 		
 
@@ -133,18 +108,21 @@ nav ul a {
 	  font-family: 'GlacialIndifferenceRegular';
 	}
 	
+.toggle-icon {
+	display: none;
+}
 
 /*
 @media screen and (max-width: 1024px) {   .div1 { display: none; } }
  */
 @media screen and (max-width: 992px){    
-	#site-navigation { display: none; } }
+	#site-navigation { display: none; }
+	.toggle-icon { display: inline; }
+	.nav-links { display: none; }
+}
 
 @media screen and (max-width: 530px){    
-	.site-logo { 
-		width: 180px !important;
-		height: 80px !important;
-	} 
+	
 	nav.navbar-fixed.green.darken-2 {
 		height: 100px !important;
 	}
@@ -200,6 +178,9 @@ ul#menu-header-1.white-text {
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <style>
+			.sidenav a:hover{
+					color: black !important;
+			}
 
 			nav.navigation.pagination {
 				background: none;
