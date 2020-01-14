@@ -25,10 +25,10 @@
 }
 
 .entry {
-  margin-top: calc(6 * #{$size__spacing-unit});
+  margin-top: calc(1.5 * #{$size__spacing-unit});
 
   &:first-of-type {
-    margin-top: 100px;
+    //margin-top: 100px;
   }
 
   .entry-header {
@@ -185,6 +185,7 @@
   }
 
   .entry-content {
+    margin-bottom: calc(1.5 * #{$size__spacing-unit});
     p {
       word-wrap: break-word;
     }

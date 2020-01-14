@@ -55,6 +55,8 @@
 	
 	</style>
 
+<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="contentcucumber" ></script>
+
 	<?php wp_head(); ?>
 
 </head>

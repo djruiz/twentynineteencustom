@@ -33,19 +33,19 @@ get_header();
 <section id="primary" class="content-area">
   <main id="main" class="site-main">
     <div class="container">
-      <div style="margin: 15vh 0;" class="row">
-        <div class="col s12 m6">
+      <div style="margin: 10vh 0;" class="intro">
+        <div style="max-width: 500px;" class="">
           <h3>We write blogs that grow businesses</h3>
           <h5>Don't worry about training, hiring, or freelancers. Get teamed up with a writer that brings your blogs to life.</h5>
-          <a style="margin: 10px 0;" href="<?php $id = 1234;
+          <a style="margin: 10px 0;" href="<?php $id = 712;
                                             echo get_page_link($id); ?>" class="btn green darken-2">How it Works</a>
-          <a style="margin: 10px;" href="<?php $id = 1197;
-                                          echo get_page_link($id); ?>" class="btn green darken-2 ">Pricing</a>
+          <a style="margin: 10px 0;" href="<?php $id = 11;
+                                            echo get_page_link($id); ?>" class="btn green darken-2 ">Pricing</a>
 
         </div>
-        <div class="col s12 m6 right-align">
+        <div class="intro-image-container center-align">
           <!--<img style="width: 350px; border-radius: 50%;" src="http://localhost/wordpress/wp-content/uploads/2019/12/600866_Blog-image-design_Op02_121219.png" alt="testing"> -->
-          <?php echo wp_get_attachment_image(26, array('350', '1000'), "", array("class" => ""));  ?>
+          <?php echo wp_get_attachment_image(26, array('400', '1000'), "", array("class" => "intro-image"));  ?>
         </div>
       </div>
 
@@ -66,15 +66,16 @@ get_header();
       </div>
 
       <div class="divider"></div>
-      <div class="row" style="margin-bottom: 0;">
-        <h3 class="center-align">How we do it</h3>
+      <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+        <h3 class="center-align" style="margin-bottom: 50px;">How we do it</h3>
         <div class="col s12 m4">
-          <div class="card">
-            <div class="card-content center-align" style="margin: 100px 0;">
+          <div class="">
+            <div class="card-content center-align" style="">
               <span class="card-title center-align">
                 <?php echo wp_get_attachment_image(25, array('125', '125'), "", array("class" => "img-responsive"));  ?>
               </span>
               <h5>You Request</h5>
+              <div class="divider"></div>
               <p>Describe what you'd like us to write.
                 Make unlimited requests and revisions.
                 Get blogs, emails, product descriptions, and more.</p>
@@ -82,12 +83,13 @@ get_header();
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card">
-            <div class="card-content center-align" style="margin: 100px 0;">
+          <div class="">
+            <div class="card-content center-align" style="">
               <span class="card-title center-align">
                 <?php echo wp_get_attachment_image(23, array('125', '125'), "", array("class" => "img-responsive"));  ?>
               </span>
               <h5>We Create</h5>
+              <div class="divider"></div>
               <p>Work with the same writer on every project.
                 Enjoy fast turnaround times.
                 Get content written by a real person.</p>
@@ -95,12 +97,13 @@ get_header();
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card">
-            <div class="card-content center-align" style="margin: 100px 0;">
+          <div class="">
+            <div class="card-content center-align" style="">
               <span class="card-title">
                 <?php echo wp_get_attachment_image(24, array('125', '125'), "", array("class" => "img-responsive"));  ?>
               </span>
               <h5>You Receive</h5>
+              <div class="divider"></div>
               <p>Build a loyal audience of readers.
                 Grow your business.
                 Create content that makes the internet a better place</p>
@@ -109,15 +112,52 @@ get_header();
         </div>
       </div>
 
-      <div class="row center-align" style="margin-bottom: 50px;">
-        <a href="<?php $id = 1197;
-                  echo get_page_link($id); ?>" class="read-more-button btn green darken-2">Get Started</a>
+      <div class="row center-align" style="">
+        <a style="margin-bottom: 50px;" href="<?php $id = 1197;
+                                              echo get_page_link($id); ?>" class="read-more-button btn green darken-2">Get Started</a>
       </div>
+
 
       <div class="divider"></div>
 
 
 
+      <div style="margin-top: 50px; margin-bottom: 50px;" class="row">
+        <h3 class="center-align" class="margin-bottom: 50px; margin-top: 50px;">Testimonials</h3>
+        <div class="col  m4 s12 right-align">
+          <div class="card-image valign-wrapper center-align" style="margin: auto; margin-top: 25px;">
+
+            <img class="center-align" src=" http://localhost/wordpress/wp-content/uploads/2020/01/mandala-gold-on-white-bg-1_180x.png" alt="">
+          </div>
+          <div class="">
+            <p class="left-align">"I love it! it's me.....but better! Me on writing steroids! Exactly what I wanted. I'm so appreciative of your collective talents. Thank you sincerely! "</p>
+            <p class="right-align"><i>-Jul, Mandala Dream Co</i></p>
+          </div>
+        </div>
+
+        <div class="col m4  s12 right-align">
+
+          <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/stickyLogo.png" alt="">
+          </div>
+          <div class="">
+            <p class="left-align">"Content Cucumber is an invaluable asset to Payflic’s content creation efforts. They are extremely professional and competent writers who take the time to understand your business and its audience... These guys are always prepared to discuss our ever changing objectives and aims. They just ‘get’ what we are trying to say to our audience."</p>
+            <p class="right-align"><i>-Ben, Payflic</i></p>
+          </div>
+        </div>
+        <div class="col  m4 s12">
+
+          <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/wagneto.png" alt="">
+          </div>
+          <div class="">
+            <p class="left-align">"Content Cucumber has helped us to implement a seamless content strategy for our website. Their writers have gone the extra mile to research topics and deliver exceptional content. They have dived into topics that are technical, cultural and marketing related! They are quick, professional, and most of all, fantastic writers!"</p>
+            <p class="right-align"><i>-Brent, Wagento</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
       <div style="margin-top: 50px; margin-bottom: 50px;" class="row center-align">
         <div class="col s12">
           <h3 style="margin-bottom: 50px;">Schedule a Demo</h3>
@@ -130,40 +170,6 @@ get_header();
 
         </div>
         </form>
-      </div>
-
-      <div class="row">
-        <div class="col m4 card center-align">
-          <div class="card-image center-align" style="height: 200px; display: flex; align-items: center;">
-
-            <img class="center-align" src=" http://localhost/wordpress/wp-content/uploads/2020/01/mandala-gold-on-white-bg-1_180x.png" alt="">
-          </div>
-          <div class="">
-            <p>"I love it! it's me.....but better! Me on writing steroids! Exactly what I wanted. I'm so appreciative of your collective talents. Thank you sincerely! "</p>
-            <p><i>-Jul, Mandala Dream Co</i></p>
-          </div>
-        </div>
-
-        <div class="col m4 card">
-
-          <div class="card-image" style="height: 200px; display: flex; align-items: center;">
-            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/stickyLogo.png" alt="">
-          </div>
-          <div class="">
-            <p>"Content Cucumber is an invaluable asset to Payflic’s content creation efforts. They are extremely professional and competent writers who take the time to understand your business and its audience... These guys are always prepared to discuss our ever changing objectives and aims. They just ‘get’ what we are trying to say to our audience."</p>
-            <p><i>-Ben, Payflic</i></p>
-          </div>
-        </div>
-        <div class="col m4 card">
-
-          <div class="card-image" style="height: 200px; display: flex; align-items: center;">
-            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/wagneto.png" alt="">
-          </div>
-          <div class="">
-            <p>"Content Cucumber has helped us to implement a seamless content strategy for our website. Their writers have gone the extra mile to research topics and deliver exceptional content. They have dived into topics that are technical, cultural and marketing related! They are quick, professional, and most of all, fantastic writers!"</p>
-            <p><i>-Brent, Wagento</i></p>
-          </div>
-        </div>
       </div>
 
 
@@ -187,6 +193,28 @@ get_header();
 
 
 <style>
+  @media screen and (max-width: 650px) {
+
+    .intro {
+      display: block !important;
+      margin: 0 !important;
+    }
+
+    .intro-image-container {
+      width: 100%;
+    }
+
+    .intro-image {
+      margin: auto;
+    }
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   body {
     font-family: 'GlacialIndifferenceRegular';
     font-weight: normal;
@@ -257,14 +285,13 @@ get_header();
 
 
 
-  .card .card-content {
-    height: 400px;
+  .card {
+    min-height: 400px !important;
   }
 
   .card-image {
-    height: 150px;
     width: 150px;
-
+    height: 125px;
   }
 </style>
 

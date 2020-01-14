@@ -11,7 +11,16 @@
 
 get_header();
 ?>
+<style>
+nav {
+	background: none;
+	box-shadow: none;
+}
+span.post-title {
+	color: #58c558 !important;
 
+}
+</style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 

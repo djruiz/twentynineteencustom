@@ -17,8 +17,10 @@ get_header();
 
 			<div class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h1>
+					<h3 class=""><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h3>
+					
 				</header><!-- .page-header -->
+				<div class="divider"></div>
 
 				<div class="page-content">
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentynineteen' ); ?></p>

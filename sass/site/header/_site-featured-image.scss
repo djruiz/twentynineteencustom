@@ -90,7 +90,7 @@
 
       /* When image filters are active, make it grayscale to colorize it blue. */
       .image-filters-enabled & {
-        filter: grayscale(100%);
+        //filter: grayscale(100%);
       }
     }
 
@@ -195,7 +195,7 @@
   .site-featured-image:after,
   &:after {
     display: block;
-    position: absolute;
+    //position: absolute;
     top: 0;
     left: 0;
     content: "\020";
