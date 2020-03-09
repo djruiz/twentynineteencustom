@@ -11,32 +11,46 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script>
+			
+			$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
         $(document).ready(function(){
-          $('.sidenav').sidenav();
-        });
+					console.log("on load");
+					$('a').removeClass("hidden");
+					$('i').removeClass("hidden");
+					$('div').removeClass("hidden");
+				});
+				
       </script>
 	</head>
 	
 <div class="navigation green darken-2">
-		<div style="margin-left: 20px;" class="toggle-icon">
-		<a href="http://localhost/wordpress/" class="">
+		<div style="margin-left: 20px;" class="hidden toggle-icon">
+		<a href="http://localhost/wordpress/" class="hidden">
 			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
-				<i style="text-decoration: none;" class="white-text material-icons medium">menu</i>
+				<i style="text-decoration: none;" class="hidden white-text material-icons medium">menu</i>
+				<style>
+					.hidden {
+						display: none !important;
+					}
+				</style>
 			</a>
 		</div>
 		<div class="">
-		<!-- <img class="img-logo" src="http://localhost/wordpress/wp-content/uploads/2019/12/CC-Logo-with-Words.png" style="margin: 10px; width: 250px; height: 100px;" alt="">-->
-		<?php
+		
+		<a href="http://contentcucumber.com"><?php
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 			echo '<img class="site-logo" src="' . esc_url( $custom_logo_url ) . '" style="margin: 10px; width: 250px; height: 100px;"alt="">';?>
-		</a>
+		</a></a>
 		</div>
 		<div class="nav-links">
 
@@ -74,15 +88,18 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- Compiled and minified CSS -->
+ <!--
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+-->
+ <link rel="stylesheet" href="https://contentcucumber.com/css/materialize.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--
+<script src="https://contentcucumber.com/js/materialize.min.js"></script>
+	-->	
 
 <style>
 .site-ul {
@@ -128,11 +145,26 @@ nav ul a {
 	}
 }
 
-
+strong {
+	font-weight: bolder !important;
+}
 /*
 @media screen and (min-width: 824px) {    #site-naviation { display: none; } }
  */
 
+/* label focus color */
+.input-field input:focus + label {
+   color: green !important;
+ }
+ /* label underline focus color */
+ .input-field input:focus {
+   border-bottom: 1px solid green !important;
+   box-shadow: 0 1px 0 0 green !important
+ }
+ input:focus {
+   border-bottom: 1px solid green !important;
+   box-shadow: 0 1px 0 0 green !important
+ }
 
 a, a:visited, .main-navigation .main-menu > li, .main-navigation ul.main-menu > li > a, .post-navigation .post-title, .entry .entry-meta a:hover, .entry .entry-footer a:hover, .entry .entry-content .more-link:hover, .main-navigation .main-menu > li > a + svg, .comment .comment-metadata > a:hover, .comment .comment-metadata .comment-edit-link:hover, #colophon .site-info a:hover, .widget a, .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color), .entry .entry-content > .has-primary-color, .entry .entry-content > *[class^="wp-block-"] .has-primary-color, .entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color, .entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p {
 	color: white;
@@ -148,6 +180,7 @@ ul#menu-header-1.white-text {
 	margin-top: 50px;
 }
 */
+
 </style>
 
 <ul class="sidenav" id="mobile-nav">
@@ -174,9 +207,7 @@ ul#menu-header-1.white-text {
 			);
 			?>
 </ul>
-
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
   <style>
 			.sidenav a:hover{
 					color: black !important;

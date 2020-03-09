@@ -17,13 +17,7 @@
 
 get_header();
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css" />
 
 
 <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="contentcucumber"></script>
@@ -35,7 +29,7 @@ get_header();
     <div class="container">
       <div style="margin: 10vh 0;" class="intro">
         <div style="max-width: 500px;" class="">
-          <h3>We write blogs that grow businesses</h3>
+          <h3 class="test" style="font-family: 'GlacialIndifferenceRegular';">We write blogs that grow businesses</h3>
           <h5>Don't worry about training, hiring, or freelancers. Get teamed up with a writer that brings your blogs to life.</h5>
           <a style="margin: 10px 0;" href="<?php $id = 712;
                                             echo get_page_link($id); ?>" class="btn green darken-2">How it Works</a>
@@ -43,11 +37,11 @@ get_header();
                                             echo get_page_link($id); ?>" class="btn green darken-2 ">Pricing</a>
 
         </div>
-        <div class="intro-image-container center-align">
-          <!--<img style="width: 350px; border-radius: 50%;" src="http://localhost/wordpress/wp-content/uploads/2019/12/600866_Blog-image-design_Op02_121219.png" alt="testing"> -->
+        <div class="intro-image-container">
           <?php echo wp_get_attachment_image(26, array('400', '1000'), "", array("class" => "intro-image"));  ?>
         </div>
       </div>
+
 
       <div class="row">
         <div class="col s12">
@@ -76,9 +70,10 @@ get_header();
               </span>
               <h5>You Request</h5>
               <div class="divider"></div>
-              <p>Describe what you'd like us to write.
-                Make unlimited requests and revisions.
-                Get blogs, emails, product descriptions, and more.</p>
+              <p>
+              Describe what you'd like us to write. <br>
+              Make unlimited requests and revisions. <br>
+              Get blogs, emails, product descriptions, and more. </p><br>
             </div>
           </div>
         </div>
@@ -90,9 +85,9 @@ get_header();
               </span>
               <h5>We Create</h5>
               <div class="divider"></div>
-              <p>Work with the same writer on every project.
-                Enjoy fast turnaround times.
-                Get content written by a real person.</p>
+              <p>Work with the same writer on every project.<br>
+                Enjoy fast turnaround times.<br>
+                Get content written by a real person.</p><br>
             </div>
           </div>
         </div>
@@ -104,17 +99,17 @@ get_header();
               </span>
               <h5>You Receive</h5>
               <div class="divider"></div>
-              <p>Build a loyal audience of readers.
-                Grow your business.
-                Create content that makes the internet a better place</p>
+              <p>Build a loyal audience of readers. <br>
+                Grow your business. <br>
+                Create content that makes the internet a better place.</p> <br>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row center-align" style="">
-        <a style="margin-bottom: 50px;" href="<?php $id = 1197;
-                                              echo get_page_link($id); ?>" class="read-more-button btn green darken-2">Get Started</a>
+        <a style="margin-bottom: 50px;" href="<?php $id = 11;
+                                              echo get_page_link($id); ?>" class="btn green darken-2">Get Started</a>
       </div>
 
 
@@ -126,8 +121,7 @@ get_header();
         <h3 class="center-align" class="margin-bottom: 50px; margin-top: 50px;">Testimonials</h3>
         <div class="col  m4 s12 right-align">
           <div class="card-image valign-wrapper center-align" style="margin: auto; margin-top: 25px;">
-
-            <img class="center-align" src=" http://localhost/wordpress/wp-content/uploads/2020/01/mandala-gold-on-white-bg-1_180x.png" alt="">
+          <?php echo wp_get_attachment_image(719, array('125', '125'), "", array("class" => "img-responsive"));  ?>
           </div>
           <div class="">
             <p class="left-align">"I love it! it's me.....but better! Me on writing steroids! Exactly what I wanted. I'm so appreciative of your collective talents. Thank you sincerely! "</p>
@@ -138,7 +132,7 @@ get_header();
         <div class="col m4  s12 right-align">
 
           <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
-            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/stickyLogo.png" alt="">
+          <?php echo wp_get_attachment_image(720, array('125', '125'), "", array("class" => "img-responsive"));  ?>
           </div>
           <div class="">
             <p class="left-align">"Content Cucumber is an invaluable asset to Payflic’s content creation efforts. They are extremely professional and competent writers who take the time to understand your business and its audience... These guys are always prepared to discuss our ever changing objectives and aims. They just ‘get’ what we are trying to say to our audience."</p>
@@ -146,9 +140,8 @@ get_header();
           </div>
         </div>
         <div class="col  m4 s12">
-
           <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
-            <img src="http://localhost/wordpress/wp-content/uploads/2020/01/wagneto.png" alt="">
+          <?php echo wp_get_attachment_image(721, array('125', '125'), "", array("class" => "img-responsive"));  ?>
           </div>
           <div class="">
             <p class="left-align">"Content Cucumber has helped us to implement a seamless content strategy for our website. Their writers have gone the extra mile to research topics and deliver exceptional content. They have dived into topics that are technical, cultural and marketing related! They are quick, professional, and most of all, fantastic writers!"</p>
@@ -165,14 +158,17 @@ get_header();
 
 
           <h5 class="center-align" style="margin: 50px 0;">Learn how our clients use Content Cucumber to grow their businesses. Schedule a call with us today!</h5>
-          <a href="https://calendly.com/chriscucumber/30min" class="btn green darken-2 read-more-button">Click Here</a>
+          <a href="https://calendly.com/chriscucumber/30min" class="btn green darken-2">Click Here</a>
 
 
         </div>
-        </form>
+  </form>
+</div>
+</div>
+
+      </div>
       </div>
 
-
     </div>
     </div>
     </div>
@@ -182,11 +178,7 @@ get_header();
     </div>
     </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        $('.modal').modal();
-      })
-    </script>
+    
 
   </main><!-- .site-main -->
 </section><!-- .content-area -->
@@ -216,7 +208,7 @@ get_header();
   }
 
   body {
-    font-family: 'GlacialIndifferenceRegular';
+    font-family: 'GlacialIndifferenceRegular' !important;
     font-weight: normal;
     font-style: normal;
   }
@@ -293,6 +285,104 @@ get_header();
     width: 150px;
     height: 125px;
   }
+  /* label focus color */
+  input[type=text]:focus + label {
+     color: #4caf50 !important;
+}
+/* label underline focus color */
+   input[type=text]:focus {
+     border-bottom: 1px solid #4caf50 !important;
+     box-shadow: 0 1px 0 0 #4caf50 !important;
+   }
+</style>
+
+<div class="modal-test" id="modal">
+  <div class="modal-header">
+    <div class="title">Weekly Newletter Sign Up</div>
+    <a class="btn green darken-2 close-button" onclick="window.closeModal(modal)" value="">
+        <i class="large material-icons">clear</i>
+  </a>
+    
+  </div>
+  
+  <div class="modal-body" id="modal-body">
+  <form class="ajax" id="form"action="" method="post">
+
+<input type="text" name="first_name" id="first_name" placeholder="Your first name"> <br>
+<input type="text" name="last_name" id="last_name" placeholder="Your last name"> <br>
+<input class="validate" type="text" name="email" id="email" placeholder="Your email"> <br>
+<input type="text" name="phone" id="phone" placeholder="Your phone"> <br>
+<a class="btn green darken-2" id="sign-up" type="submit" value="submit">Sign Up</a>
+<p class="serverResponse"></p>
+</form>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+  
+
+<style>
+/* modal stylings */
+.modal-test {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid green;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal-test.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid green;
+}
+
+.modal-header.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /*background: none;*/
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  transition: 200ms ease-in-out;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+
+}
 </style>
 
 <?php

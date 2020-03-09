@@ -65,5 +65,16 @@ span.post-title {
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
+
+	<!-- styles for bullet points in the posts -->
+	<style>
+	
+	.bullet ul li {
+		list-style: disc !important;
+	}
+	
+	</style>
+
 <?php
 get_footer();
+?>

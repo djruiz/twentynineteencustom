@@ -18,7 +18,7 @@ get_header();
 ?>
 <div class="container">
 	<div class="row">
-		<div id="posts" class="col s8 left-align">
+		<div id="posts" class="col  m8 s12 left-align">
 		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php
@@ -43,7 +43,7 @@ get_header();
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 		</div>
-		<div id="sidebar" style="" class="col s4">
+		<div id="sidebar" style="" class="col m4 s12">
 			<?php
 				//get_template_part( 'template-parts/footer/footer', 'widgets' );
 				get_template_part('template-parts/sidebar/sidebar');
@@ -52,6 +52,11 @@ get_header();
 	</div>
 </div>
 
+<style>
+
+
+
+</style>
 	
 
 <?php

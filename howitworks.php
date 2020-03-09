@@ -28,12 +28,7 @@ get_header();
 //get_header();
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <!-- Compiled and minified JavaScript -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- Compiled and minified CSS -->
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
 
 <script>
@@ -42,8 +37,7 @@ get_header();
   });
 </script>
 <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="contentcucumber" ></script>
-<!-- Compiled and minified JavaScript -->
-<?php?>  
+<!-- Compiled and minified JavaScript -->  
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<div class="container" style="margin-bottom: 100px;">
@@ -53,29 +47,17 @@ get_header();
                 <iframe width="100%" height="543" src="https://www.youtube.com/embed/ba2MUHESdw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <ul class="collapsible">
     <li>
-      <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
-      <?php echo wp_get_attachment_image( 32, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?>
-      <p style="margin: 10px;">What Does $490/Month Get Me?</p>
-    </div>
-      <div class="collapsible-body left-align"><span>Beyond providing a talented writer, a Content Cucumber subscription also provides an experience. We know that managing creative projects can be cumbersome (pun intended) so we designed an easy way to get a great writer! </span></div>
-    </li>
-    <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
       <?php echo wp_get_attachment_image( 716, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?>  
-      <p style="margin: 10px;">How Many Articles Can I get in a Month? </p>
+      <p style="margin: 10px;">How Much Content Do I Get? </p>
     </div>
       <div class="collapsible-body left-align"><span>
-        <p>Our service allows you to queue up unlimited requests...but do remember that your writer is only human! Your writer will be dedicating time to your projects every business day, so as long as you keep your queue full, you can expect enough output to turn any small or medium-sized business into a content powerhouse.
-
-Agencies and enterprises can inquire about custom projects by scheduling a call with Isaac, our Co-founder and Creative Director. 
+        <p>Content Cucumber is not about buying blogs at a “per article” rate, it’s more like having a writer on staff. You can request blogs, emails, and product descriptions from your writer on-demand, with most articles being delivered in 1-2 business days. 
 </p>
       </span></div>
     </li>
     <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
       <?php echo wp_get_attachment_image( 30, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?>
       <p style="margin: 10px;">Who Chooses the Topics?</p>
     </div>
@@ -85,7 +67,6 @@ Agencies and enterprises can inquire about custom projects by scheduling a call 
     </li>
     <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt=""> 
       <?php echo wp_get_attachment_image( 715, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?> 
       <p style="margin: 10px;">What Can Content Cucumber Write About? </p>
     </div>
@@ -94,13 +75,12 @@ Agencies and enterprises can inquire about custom projects by scheduling a call 
 
 A good rule to follow: if you need something a bit unconventional, just ask your writer what they think is feasible. They’re the real on-the-ground experts, and they’ll give you an honest answer! 
 
-If you are not a client and would like to discuss what a special project might look like, we recommend scheduling a call with Chris, our Co-Founder and Onboarding Specialist. 
+If you are not a client and would like to discuss what a special project might look like, we recommend scheduling a <a class="green-text" href="https://calendly.com/chriscucumber/30min">call</a> with Chris, our Co-Founder and Onboarding Specialist. 
  </p>
       </span></div>
     </li>
     <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
       <?php echo wp_get_attachment_image( 33, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?>
       <p style="margin: 10px;">How Do the Copyrights Work? </p>
     </div>
@@ -110,7 +90,6 @@ If you are not a client and would like to discuss what a special project might l
     </li>
     <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
       <?php echo wp_get_attachment_image( 31, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?>  
       <p style="margin: 10px;">How do I Request a Revision?</p>
     </div>
@@ -126,15 +105,12 @@ If you are not a client and would like to discuss what a special project might l
     </li>
     <li>
     <div class="collapsible-header">
-      <img style="height: 50px; width: 50px;" src="http://localhost/wordpress/wp-content/uploads/2019/12/607788_how-it-works-visuals_01_Op02_WhatDoes_121319.png" alt="">
-      <?php echo wp_get_attachment_image( 706, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?> 
-      <p style="margin: 10px;">What Exactly Does the 15-Day Guarantee Mean? </p>
+      <?php echo wp_get_attachment_image( 1144, array('50', '50'), "", array( "class" => "img-responsive" ) );  ?> 
+      <p style="margin: 10px;">What If I Don’t Like It?</p>
     </div>
       <div class="collapsible-body left-align"><span>
         <p>
-        Because Content Cucumber is intended to be a creative experience, we don’t believe that giving away sample articles is the best way to show potential customers what being a Client Cucumber is really like.
-
-That’s why we offer a 15-Day Satisfaction Guarantee. This lets you try the service risk-free for two weeks, and then decide if we provided what you are looking for. If you’re not happy with the service, just let us know and we will refund the full amount paid. 
+        We are confident that adding a Content Cucumber writer to your team will supercharge your blog. But if for any reason you don’t love it, we offer a 14-day money back satisfaction guarantee.
 
         </p>
       </span></div>
@@ -142,6 +118,11 @@ That’s why we offer a 15-Day Satisfaction Guarantee. This lets you try the ser
   </ul>
             </div>
 
+
+
+                  <div class="row center-align" style="">
+                      <a style="margin-bottom: 50px;" href="<?php $id = 11; echo get_page_link($id); ?>" class="read-more-button btn green darken-2">Pricing</a>
+                        </div>
         </div>
 <script>
 $(document).ready(function(){

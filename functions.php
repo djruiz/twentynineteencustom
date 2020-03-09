@@ -240,6 +240,10 @@ function twentynineteen_scripts() {
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
+	
+
+	wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/__script.js' ), array(), '1.1', true );
+
 
 	if ( has_nav_menu( 'menu-1' ) ) {
 		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
@@ -384,4 +388,14 @@ function my_home_page_styles() {
     <?php
     }
 }
+
+
+function custom_ppp($query) {
+
+	if (!is_admin() && $query->is_home() && $query->is_main_query() ) {
+			$query->set( 'posts_per_page', '10' );
+	}
+}
+add_action( 'pre_get_posts', 'custom_ppp' );
+
 ?>

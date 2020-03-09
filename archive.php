@@ -12,13 +12,17 @@
 get_header();
 ?>
 <div class="container">
+	<?php
+		the_archive_title( '<h4 class="page-title">', '</h4>' );
+	?>
 	<div class="row">
-		<div id="posts" class="col s8 left-align">
+		<div id="posts" class="col  m8 s12 left-align">
 		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php
 		if ( have_posts() ) {
 
+			
 			// Load posts loop.
 			while ( have_posts() ) {
 				the_post();
@@ -38,7 +42,7 @@ get_header();
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 		</div>
-		<div id="sidebar" class="col s4">
+		<div id="sidebar" style="" class="col m4 s12">
 			<?php
 				//get_template_part( 'template-parts/footer/footer', 'widgets' );
 				get_template_part('template-parts/sidebar/sidebar');
@@ -46,6 +50,13 @@ get_header();
 		</div>
 	</div>
 </div>
+
+<style>
+
+
+
+</style>
+	
 
 	
 

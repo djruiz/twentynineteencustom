@@ -20,13 +20,13 @@ get_header();
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css" />
 <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="contentcucumber"></script>
 
-<div style="margin-top: 50px;" class="container">
-  <div class="row" style="margin-bottom: 50px;">
+<div style="margin-top: 5px;" class="container">
+  <div class="row" style="margin-bottom: 65px;">
 
     <div class=" col s12">
-      <div class="card">
+      <div class="">
 
-        <div class="card-content center" style="height: 650px;">
+        <div class=" center" style="height: 650px;">
 
 
           <!-- features
@@ -41,52 +41,86 @@ get_header();
 -->
 
 
-          <div class="card-content center">
+          <div class="">
             <h4 class=''><small>$</small>490 per Month</h4>
-            <a style="margin: 30px 0;" class="btn green darken-2" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="content-cucumber-subscription"> Sign Up Now </a>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam accusantium recusandae, fuga necessitatibus autem, iusto debitis quae odio voluptate quod dignissimos! Perferendis, doloremque! Labore molestiae quam aperiam deserunt repudiandae.</p>
           </div>
+          
+
+          <div class="row center-align" style="margin: 0;">
+            <a style="margin: 10px 0;" class="btn green darken-2" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="content-cucumber-subscription"> Sign Up Now </a>
+                        </div>
+
+                        <div class="divider"></div>
+          <h4>What you get with Content Cucumber</h4>
+
           <div class="row">
             <div class="col s12 m4">
-              <img src="http://localhost/wordpress/wp-content/uploads/2019/12/604155_Pricing-visuals_05_Unlimited-requests_Op03_121119.png" alt="" class="pricing-icons">
-              <?php echo wp_get_attachment_image(29, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-              <h5>Unlimited Requests</h5>
-              <h6>Add requests as soon as inspiration strikes</h6>
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Unlimited Requests</span>
+                  <?php echo wp_get_attachment_image(29, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                  <h6>Add requests as soon as inspiration strikes</h6>
+                </div>
+              </div>
             </div>
             <div class="col s12 m4">
-              <img src="http://localhost/wordpress/wp-content/uploads/2019/12/604155_Pricing-visuals_04_Stock-images-included_Op01_121119.png" alt="" class="pricing-icons">
-              <?php echo wp_get_attachment_image(28, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-              <h5>Stock Images Included</h5>
-              <h6>Add a creative element to your projects.</h6>
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Stock Images Included</span>
+                  <?php echo wp_get_attachment_image(28, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                  <h6>Add a creative element to your projects.</h6>
+                </div>
+              </div>
             </div>
             <div class="col s12 m4">
-              <img src="http://localhost/wordpress/wp-content/uploads/2019/12/604155_Pricing-visuals_04_Stock-images-included_Op01_121119.png" alt="" class="pricing-icons">
-              <?php echo wp_get_attachment_image(706, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-              <h5>15 Day Gurantee</h5>
-              <h6>Love it or get a full refund with no questions asked</h6>
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">14 Day Guarantee</span>
+                  <?php echo wp_get_attachment_image(706, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                  <h6>Love it or get a full refund with no questions asked</h6>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col s12">
-            <div class="row">
-              <div class="col s12 m4">
-                <img src="http://localhost/wordpress/wp-content/uploads/2019/12/fastturnaround.png" alt="" class="pricing-icons">
-                <?php echo wp_get_attachment_image(707, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-                <h5>Fast Turnaround</h5>
-                <h6>Writers work every business day</h6>
-              </div>
-              <div class="col s12 m4">
-                <img src="http://localhost/wordpress/wp-content/uploads/2019/12/604155_Pricing-visuals_03_Flat-rate-billing_Op01_121119.png" alt="" class="pricing-icons">
-                <?php echo wp_get_attachment_image(27, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-                <h5>Flat-rate Billing</h5>
-                <h6>Writers work every business day</h6>
-              </div>
-              <div class="col s12 m4">
 
-                <img src="http://localhost/wordpress/wp-content/uploads/2019/12/pricing.png" alt="" class="pricing-icons">
-                <?php echo wp_get_attachment_image(708, array('75', '75'), "", array("class" => "img-responsive"));  ?>
-                <h5>Free Revisions</h5>
-                <h6>We'll keep writing until it's perfect!</h6>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Fast Turnaround</span>
+                  <?php echo wp_get_attachment_image(707, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                <h6>Writers work every business day</h6>
+                </div>
               </div>
             </div>
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Flat-rate Billing</span>
+                  <?php echo wp_get_attachment_image(27, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                
+                  <h6>Writers work every business day</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Free Revisions</span>
+                  <?php echo wp_get_attachment_image(708, array('75', '75'), "", array("class" => "img-responsive"));  ?>
+                <h6>We'll keep writing until it's perfect!</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+            <div class="row center-align" style="margin: 0;">
+            <a style="margin: 10px 0;" class="btn green darken-2" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="content-cucumber-subscription"> Sign Up Now </a>
+                        </div>
 
           </div>
           <!--
@@ -115,9 +149,12 @@ get_header();
       height: 75px;
       width: 75px;
     }
+
+    @media screen and (min-width: 600px){    
+      .pricing-funnel { display: none; }
+    }
+
   </style>
-
-
 
   <!--
       

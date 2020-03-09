@@ -61,8 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * character instead.
  */
 @font-face {
-  font-family: "NonBreakingSpaceOverride";
-  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format("woff");
+  font-family: "GlacialIndifferenceRegular";
 }
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
  * since its edges can look jagged due to lack of antialiasing. In this case, we are several
@@ -120,7 +119,7 @@ h6:lang(ar), button:lang(ar),
 input:lang(ar),
 select:lang(ar),
 optgroup:lang(ar),
-textarea:lang(ar), body:lang(ar) {
+textarea:lang(ar) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(ary), .wp-caption-text:lang(ary), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ary), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ary), .entry .entry-content .wp-block-file:lang(ary), .entry .entry-content .wp-block-audio figcaption:lang(ary),
@@ -172,7 +171,7 @@ h6:lang(ary), button:lang(ary),
 input:lang(ary),
 select:lang(ary),
 optgroup:lang(ary),
-textarea:lang(ary), body:lang(ary) {
+textarea:lang(ary) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(azb), .wp-caption-text:lang(azb), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(azb), .entry .entry-content .wp-block-file .wp-block-file__button:lang(azb), .entry .entry-content .wp-block-file:lang(azb), .entry .entry-content .wp-block-audio figcaption:lang(azb),
@@ -224,7 +223,7 @@ h6:lang(azb), button:lang(azb),
 input:lang(azb),
 select:lang(azb),
 optgroup:lang(azb),
-textarea:lang(azb), body:lang(azb) {
+textarea:lang(azb) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(ckb), .wp-caption-text:lang(ckb), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ckb), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ckb), .entry .entry-content .wp-block-file:lang(ckb), .entry .entry-content .wp-block-audio figcaption:lang(ckb),
@@ -276,7 +275,7 @@ h6:lang(ckb), button:lang(ckb),
 input:lang(ckb),
 select:lang(ckb),
 optgroup:lang(ckb),
-textarea:lang(ckb), body:lang(ckb) {
+textarea:lang(ckb) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(fa-IR), .wp-caption-text:lang(fa-IR), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(fa-IR), .entry .entry-content .wp-block-file .wp-block-file__button:lang(fa-IR), .entry .entry-content .wp-block-file:lang(fa-IR), .entry .entry-content .wp-block-audio figcaption:lang(fa-IR),
@@ -328,7 +327,7 @@ h6:lang(fa-IR), button:lang(fa-IR),
 input:lang(fa-IR),
 select:lang(fa-IR),
 optgroup:lang(fa-IR),
-textarea:lang(fa-IR), body:lang(fa-IR) {
+textarea:lang(fa-IR) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(haz), .wp-caption-text:lang(haz), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(haz), .entry .entry-content .wp-block-file .wp-block-file__button:lang(haz), .entry .entry-content .wp-block-file:lang(haz), .entry .entry-content .wp-block-audio figcaption:lang(haz),
@@ -380,7 +379,7 @@ h6:lang(haz), button:lang(haz),
 input:lang(haz),
 select:lang(haz),
 optgroup:lang(haz),
-textarea:lang(haz), body:lang(haz) {
+textarea:lang(haz) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(ps), .wp-caption-text:lang(ps), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ps), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ps), .entry .entry-content .wp-block-file:lang(ps), .entry .entry-content .wp-block-audio figcaption:lang(ps),
@@ -432,7 +431,7 @@ h6:lang(ps), button:lang(ps),
 input:lang(ps),
 select:lang(ps),
 optgroup:lang(ps),
-textarea:lang(ps), body:lang(ps) {
+textarea:lang(ps) {
   font-family: Tahoma, Arial, sans-serif;
 }
 .gallery-caption:lang(be), .wp-caption-text:lang(be), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(be), .entry .entry-content .wp-block-file .wp-block-file__button:lang(be), .entry .entry-content .wp-block-file:lang(be), .entry .entry-content .wp-block-audio figcaption:lang(be),
@@ -484,7 +483,7 @@ h6:lang(be), button:lang(be),
 input:lang(be),
 select:lang(be),
 optgroup:lang(be),
-textarea:lang(be), body:lang(be) {
+textarea:lang(be) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(bg-BG), .wp-caption-text:lang(bg-BG), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bg-BG), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bg-BG), .entry .entry-content .wp-block-file:lang(bg-BG), .entry .entry-content .wp-block-audio figcaption:lang(bg-BG),
@@ -536,7 +535,7 @@ h6:lang(bg-BG), button:lang(bg-BG),
 input:lang(bg-BG),
 select:lang(bg-BG),
 optgroup:lang(bg-BG),
-textarea:lang(bg-BG), body:lang(bg-BG) {
+textarea:lang(bg-BG) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(kk), .wp-caption-text:lang(kk), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(kk), .entry .entry-content .wp-block-file .wp-block-file__button:lang(kk), .entry .entry-content .wp-block-file:lang(kk), .entry .entry-content .wp-block-audio figcaption:lang(kk),
@@ -588,7 +587,7 @@ h6:lang(kk), button:lang(kk),
 input:lang(kk),
 select:lang(kk),
 optgroup:lang(kk),
-textarea:lang(kk), body:lang(kk) {
+textarea:lang(kk) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(mk-MK), .wp-caption-text:lang(mk-MK), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(mk-MK), .entry .entry-content .wp-block-file .wp-block-file__button:lang(mk-MK), .entry .entry-content .wp-block-file:lang(mk-MK), .entry .entry-content .wp-block-audio figcaption:lang(mk-MK),
@@ -640,7 +639,7 @@ h6:lang(mk-MK), button:lang(mk-MK),
 input:lang(mk-MK),
 select:lang(mk-MK),
 optgroup:lang(mk-MK),
-textarea:lang(mk-MK), body:lang(mk-MK) {
+textarea:lang(mk-MK) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(mn), .wp-caption-text:lang(mn), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(mn), .entry .entry-content .wp-block-file .wp-block-file__button:lang(mn), .entry .entry-content .wp-block-file:lang(mn), .entry .entry-content .wp-block-audio figcaption:lang(mn),
@@ -692,7 +691,7 @@ h6:lang(mn), button:lang(mn),
 input:lang(mn),
 select:lang(mn),
 optgroup:lang(mn),
-textarea:lang(mn), body:lang(mn) {
+textarea:lang(mn) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(ru-RU), .wp-caption-text:lang(ru-RU), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ru-RU), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ru-RU), .entry .entry-content .wp-block-file:lang(ru-RU), .entry .entry-content .wp-block-audio figcaption:lang(ru-RU),
@@ -744,7 +743,7 @@ h6:lang(ru-RU), button:lang(ru-RU),
 input:lang(ru-RU),
 select:lang(ru-RU),
 optgroup:lang(ru-RU),
-textarea:lang(ru-RU), body:lang(ru-RU) {
+textarea:lang(ru-RU) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(sah), .wp-caption-text:lang(sah), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(sah), .entry .entry-content .wp-block-file .wp-block-file__button:lang(sah), .entry .entry-content .wp-block-file:lang(sah), .entry .entry-content .wp-block-audio figcaption:lang(sah),
@@ -796,7 +795,7 @@ h6:lang(sah), button:lang(sah),
 input:lang(sah),
 select:lang(sah),
 optgroup:lang(sah),
-textarea:lang(sah), body:lang(sah) {
+textarea:lang(sah) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(sr-RS), .wp-caption-text:lang(sr-RS), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(sr-RS), .entry .entry-content .wp-block-file .wp-block-file__button:lang(sr-RS), .entry .entry-content .wp-block-file:lang(sr-RS), .entry .entry-content .wp-block-audio figcaption:lang(sr-RS),
@@ -848,7 +847,7 @@ h6:lang(sr-RS), button:lang(sr-RS),
 input:lang(sr-RS),
 select:lang(sr-RS),
 optgroup:lang(sr-RS),
-textarea:lang(sr-RS), body:lang(sr-RS) {
+textarea:lang(sr-RS) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(tt-RU), .wp-caption-text:lang(tt-RU), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(tt-RU), .entry .entry-content .wp-block-file .wp-block-file__button:lang(tt-RU), .entry .entry-content .wp-block-file:lang(tt-RU), .entry .entry-content .wp-block-audio figcaption:lang(tt-RU),
@@ -900,7 +899,7 @@ h6:lang(tt-RU), button:lang(tt-RU),
 input:lang(tt-RU),
 select:lang(tt-RU),
 optgroup:lang(tt-RU),
-textarea:lang(tt-RU), body:lang(tt-RU) {
+textarea:lang(tt-RU) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(uk), .wp-caption-text:lang(uk), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(uk), .entry .entry-content .wp-block-file .wp-block-file__button:lang(uk), .entry .entry-content .wp-block-file:lang(uk), .entry .entry-content .wp-block-audio figcaption:lang(uk),
@@ -952,7 +951,7 @@ h6:lang(uk), button:lang(uk),
 input:lang(uk),
 select:lang(uk),
 optgroup:lang(uk),
-textarea:lang(uk), body:lang(uk) {
+textarea:lang(uk) {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 .gallery-caption:lang(zh-HK), .wp-caption-text:lang(zh-HK), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(zh-HK), .entry .entry-content .wp-block-file .wp-block-file__button:lang(zh-HK), .entry .entry-content .wp-block-file:lang(zh-HK), .entry .entry-content .wp-block-audio figcaption:lang(zh-HK),
@@ -1004,7 +1003,7 @@ h6:lang(zh-HK), button:lang(zh-HK),
 input:lang(zh-HK),
 select:lang(zh-HK),
 optgroup:lang(zh-HK),
-textarea:lang(zh-HK), body:lang(zh-HK) {
+textarea:lang(zh-HK) {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang HK", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif;
 }
 .gallery-caption:lang(zh-TW), .wp-caption-text:lang(zh-TW), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(zh-TW), .entry .entry-content .wp-block-file .wp-block-file__button:lang(zh-TW), .entry .entry-content .wp-block-file:lang(zh-TW), .entry .entry-content .wp-block-audio figcaption:lang(zh-TW),
@@ -1056,7 +1055,7 @@ h6:lang(zh-TW), button:lang(zh-TW),
 input:lang(zh-TW),
 select:lang(zh-TW),
 optgroup:lang(zh-TW),
-textarea:lang(zh-TW), body:lang(zh-TW) {
+textarea:lang(zh-TW) {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif;
 }
 .gallery-caption:lang(zh-CN), .wp-caption-text:lang(zh-CN), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(zh-CN), .entry .entry-content .wp-block-file .wp-block-file__button:lang(zh-CN), .entry .entry-content .wp-block-file:lang(zh-CN), .entry .entry-content .wp-block-audio figcaption:lang(zh-CN),
@@ -1108,7 +1107,7 @@ h6:lang(zh-CN), button:lang(zh-CN),
 input:lang(zh-CN),
 select:lang(zh-CN),
 optgroup:lang(zh-CN),
-textarea:lang(zh-CN), body:lang(zh-CN) {
+textarea:lang(zh-CN) {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif;
 }
 .gallery-caption:lang(bn-BD), .wp-caption-text:lang(bn-BD), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bn-BD), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bn-BD), .entry .entry-content .wp-block-file:lang(bn-BD), .entry .entry-content .wp-block-audio figcaption:lang(bn-BD),
@@ -1160,7 +1159,7 @@ h6:lang(bn-BD), button:lang(bn-BD),
 input:lang(bn-BD),
 select:lang(bn-BD),
 optgroup:lang(bn-BD),
-textarea:lang(bn-BD), body:lang(bn-BD) {
+textarea:lang(bn-BD) {
   font-family: Arial, sans-serif;
 }
 .gallery-caption:lang(hi-IN), .wp-caption-text:lang(hi-IN), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(hi-IN), .entry .entry-content .wp-block-file .wp-block-file__button:lang(hi-IN), .entry .entry-content .wp-block-file:lang(hi-IN), .entry .entry-content .wp-block-audio figcaption:lang(hi-IN),
@@ -1212,7 +1211,7 @@ h6:lang(hi-IN), button:lang(hi-IN),
 input:lang(hi-IN),
 select:lang(hi-IN),
 optgroup:lang(hi-IN),
-textarea:lang(hi-IN), body:lang(hi-IN) {
+textarea:lang(hi-IN) {
   font-family: Arial, sans-serif;
 }
 .gallery-caption:lang(mr), .wp-caption-text:lang(mr), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(mr), .entry .entry-content .wp-block-file .wp-block-file__button:lang(mr), .entry .entry-content .wp-block-file:lang(mr), .entry .entry-content .wp-block-audio figcaption:lang(mr),
@@ -1264,7 +1263,7 @@ h6:lang(mr), button:lang(mr),
 input:lang(mr),
 select:lang(mr),
 optgroup:lang(mr),
-textarea:lang(mr), body:lang(mr) {
+textarea:lang(mr) {
   font-family: Arial, sans-serif;
 }
 .gallery-caption:lang(ne-NP), .wp-caption-text:lang(ne-NP), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ne-NP), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ne-NP), .entry .entry-content .wp-block-file:lang(ne-NP), .entry .entry-content .wp-block-audio figcaption:lang(ne-NP),
@@ -1316,7 +1315,7 @@ h6:lang(ne-NP), button:lang(ne-NP),
 input:lang(ne-NP),
 select:lang(ne-NP),
 optgroup:lang(ne-NP),
-textarea:lang(ne-NP), body:lang(ne-NP) {
+textarea:lang(ne-NP) {
   font-family: Arial, sans-serif;
 }
 .gallery-caption:lang(el), .wp-caption-text:lang(el), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(el), .entry .entry-content .wp-block-file .wp-block-file__button:lang(el), .entry .entry-content .wp-block-file:lang(el), .entry .entry-content .wp-block-audio figcaption:lang(el),
@@ -1368,7 +1367,7 @@ h6:lang(el), button:lang(el),
 input:lang(el),
 select:lang(el),
 optgroup:lang(el),
-textarea:lang(el), body:lang(el) {
+textarea:lang(el) {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .gallery-caption:lang(gu), .wp-caption-text:lang(gu), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(gu), .entry .entry-content .wp-block-file .wp-block-file__button:lang(gu), .entry .entry-content .wp-block-file:lang(gu), .entry .entry-content .wp-block-audio figcaption:lang(gu),
@@ -1420,7 +1419,7 @@ h6:lang(gu), button:lang(gu),
 input:lang(gu),
 select:lang(gu),
 optgroup:lang(gu),
-textarea:lang(gu), body:lang(gu) {
+textarea:lang(gu) {
   font-family: Arial, sans-serif;
 }
 .gallery-caption:lang(he-IL), .wp-caption-text:lang(he-IL), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(he-IL), .entry .entry-content .wp-block-file .wp-block-file__button:lang(he-IL), .entry .entry-content .wp-block-file:lang(he-IL), .entry .entry-content .wp-block-audio figcaption:lang(he-IL),
@@ -1472,7 +1471,7 @@ h6:lang(he-IL), button:lang(he-IL),
 input:lang(he-IL),
 select:lang(he-IL),
 optgroup:lang(he-IL),
-textarea:lang(he-IL), body:lang(he-IL) {
+textarea:lang(he-IL) {
   font-family: "Arial Hebrew", Arial, sans-serif;
 }
 .gallery-caption:lang(ja), .wp-caption-text:lang(ja), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ja), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ja), .entry .entry-content .wp-block-file:lang(ja), .entry .entry-content .wp-block-audio figcaption:lang(ja),
@@ -1524,7 +1523,7 @@ h6:lang(ja), button:lang(ja),
 input:lang(ja),
 select:lang(ja),
 optgroup:lang(ja),
-textarea:lang(ja), body:lang(ja) {
+textarea:lang(ja) {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, "Helvetica Neue", sans-serif;
 }
 .gallery-caption:lang(ko-KR), .wp-caption-text:lang(ko-KR), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ko-KR), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ko-KR), .entry .entry-content .wp-block-file:lang(ko-KR), .entry .entry-content .wp-block-audio figcaption:lang(ko-KR),
@@ -1576,7 +1575,7 @@ h6:lang(ko-KR), button:lang(ko-KR),
 input:lang(ko-KR),
 select:lang(ko-KR),
 optgroup:lang(ko-KR),
-textarea:lang(ko-KR), body:lang(ko-KR) {
+textarea:lang(ko-KR) {
   font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif;
 }
 .gallery-caption:lang(th), .wp-caption-text:lang(th), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(th), .entry .entry-content .wp-block-file .wp-block-file__button:lang(th), .entry .entry-content .wp-block-file:lang(th), .entry .entry-content .wp-block-audio figcaption:lang(th),
@@ -1628,7 +1627,7 @@ h6:lang(th), button:lang(th),
 input:lang(th),
 select:lang(th),
 optgroup:lang(th),
-textarea:lang(th), body:lang(th) {
+textarea:lang(th) {
   font-family: "Sukhumvit Set", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 .gallery-caption:lang(vi), .wp-caption-text:lang(vi), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(vi), .entry .entry-content .wp-block-file .wp-block-file__button:lang(vi), .entry .entry-content .wp-block-file:lang(vi), .entry .entry-content .wp-block-audio figcaption:lang(vi),
@@ -1680,7 +1679,7 @@ h6:lang(vi), button:lang(vi),
 input:lang(vi),
 select:lang(vi),
 optgroup:lang(vi),
-textarea:lang(vi), body:lang(vi) {
+textarea:lang(vi) {
   font-family: "Libre Franklin", sans-serif;
 }
 
@@ -2026,7 +2025,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.8;
@@ -2040,7 +2038,7 @@ select,
 optgroup,
 textarea {
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: 400;
   line-height: 1.8;
   text-rendering: optimizeLegibility;
@@ -2072,7 +2070,44 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
+}
+
+@font-face {
+  font-family: "GlacialIndifferenceRegular";
+  src: url("/fonts/GlacialIndifference-Regular.otf");
+}
+body {
+  font-family: "GlacialIndifferenceRegular" !important;
+}
+
+.author-description .author-link,
+.comment-metadata,
+.comment-reply-link,
+.comments-title,
+.comment-author .fn,
+.discussion-meta-info,
+.entry-meta,
+.entry-footer,
+.main-navigation,
+.no-comments,
+.not-found .page-title,
+.error-404 .page-title,
+.post-navigation .post-title,
+.page-links,
+.page-description,
+.pagination .nav-links,
+.sticky-post,
+.site-title,
+.site-info,
+#cancel-comment-reply-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GlacialIndifferenceRegular";
 }
 
 .main-navigation,
@@ -2092,15 +2127,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.2;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .page-title {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
 }
 
 .site-branding,
@@ -2182,6 +2213,7 @@ h6 {
 .site-title,
 .page-title {
   font-weight: normal;
+  font-family: "GlacialIndifferenceRegular";
 }
 
 .page-description,
@@ -2232,7 +2264,7 @@ i {
 blockquote cite {
   font-size: 0.8em;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
 }
 
 pre {
@@ -2250,7 +2282,8 @@ var {
   font-family: Menlo, monaco, Consolas, Lucida Console, monospace;
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
@@ -2303,9 +2336,13 @@ a {
   color: #58c558;
 }
 
+/*
+a:visited {
+}
+
 a:hover,
 a:active {
-  color: #3cae3c;
+  color: $color__link-hover;
   outline: 0;
   text-decoration: none;
 }
@@ -2315,7 +2352,7 @@ a:focus {
   outline-style: dotted;
   text-decoration: underline;
 }
-
+*/
 h1,
 h2,
 h3,
@@ -2403,7 +2440,7 @@ table {
   margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
 }
 table td,
 table th {
@@ -2424,7 +2461,7 @@ input[type=submit] {
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 1em;
   font-weight: 700;
   line-height: 1.2;
@@ -2522,27 +2559,14 @@ form p {
   margin: 1rem 0;
 }
 
+form.ajax input {
+  font-family: "GlacialIndifferenceRegular";
+}
+
 /* Navigation */
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  transition: color 110ms ease-in-out;
-  color: #58c558;
-}
-a:visited {
-  color: #0073aa;
-}
-a:hover, a:active {
-  color: #3cae3c;
-  outline: 0;
-  text-decoration: none;
-}
-a:focus {
-  outline: thin dotted;
-  text-decoration: underline;
-}
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -2585,7 +2609,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -2821,7 +2845,7 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -2908,7 +2932,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3204,7 +3228,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: bold;
 }
 .comment-navigation .nav-previous .secondary-text,
@@ -4164,7 +4188,7 @@ html {
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 0.8em;
   font-weight: 500;
   margin-top: 1rem;
@@ -4181,7 +4205,7 @@ html {
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: 500;
 }
 
@@ -4365,7 +4389,7 @@ html {
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 0.8em;
   color: #767676;
 }
@@ -4525,6 +4549,34 @@ html {
   margin-right: 1rem;
 }
 
+div#sidebar.col.s4 {
+  font-size: 12px !important;
+}
+
+section#recent-posts-2.widget.widget_recent_entries ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+
+section#archives-2.widget.widget_archive ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+
+section#meta-2.widget.widget_meta ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+
+section#categories-2.widget_categories ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+
 /* Widgets */
 .widget {
   margin: 0 0 1rem;
@@ -4560,7 +4612,7 @@ html {
 .widget_recent_entries ul li,
 .widget_rss ul li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: calc(22px * 1);
   font-weight: 700;
   line-height: 1.2;
@@ -4585,14 +4637,14 @@ html {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: 700;
 }
 
@@ -4803,7 +4855,7 @@ html {
   transition: background 150ms ease-in-out;
   border: none;
   font-size: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.2;
   box-sizing: border-box;
   font-weight: bold;
@@ -4860,7 +4912,7 @@ html {
 .entry .entry-content .wp-block-archives li > a,
 .entry .entry-content .wp-block-categories li > a,
 .entry .entry-content .wp-block-latest-posts li > a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: calc(22px * 1);
   font-weight: bold;
   line-height: 1.2;
@@ -4881,13 +4933,13 @@ html {
   counter-reset: submenu;
 }
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 .entry .entry-content .wp-block-latest-posts .wp-block-latest-posts__post-date {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 0.8em;
   color: #767676;
   line-height: 1.2;
@@ -4926,12 +4978,12 @@ html {
   padding: 1rem;
 }
 .entry .entry-content .wp-block-verse {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 22px;
   line-height: 1.8;
 }
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 3em;
   line-height: 1;
   font-weight: bold;
@@ -4967,7 +5019,7 @@ html {
 }
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.6;
   text-transform: none;
   color: #767676;
@@ -5153,7 +5205,7 @@ html {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.25;
@@ -5235,7 +5287,7 @@ html {
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
   font-size: 0.8em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -5309,7 +5361,7 @@ html {
   border-color: #767676;
 }
 .entry .entry-content .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
 }
 .entry .entry-content .wp-block-file .wp-block-file__button {
   display: table;
@@ -5318,7 +5370,7 @@ html {
   border-radius: 5px;
   background: #4caf50;
   font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
@@ -5365,7 +5417,7 @@ html {
   }
 }
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   font-weight: bold;
 }
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
@@ -5550,7 +5602,7 @@ svg {
 .wp-caption-text {
   color: #767676;
   font-size: 0.8em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -5630,7 +5682,7 @@ svg {
 .gallery-caption {
   display: block;
   font-size: 0.8em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GlacialIndifferenceRegular";
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;

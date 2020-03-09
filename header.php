@@ -24,34 +24,18 @@
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- Compiled and minified CSS -->
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+
 <style>
+	@font-face{
+				font-family: 'GlacialIndifferenceRegular';
+				src: url('fonts/GlacialIndifference-Regular.otf');
+				 }
+
  body {
-        font-family: 'GlacialIndifferenceRegular';
+				font-family: 'GlacialIndifferenceRegular';
     }
 
-    section#recent-posts-2.widget.widget_recent_entries ul li a {
-		color: green !important;
-		font-size: 12px !important;
-		font-family: 'GlacialIndifferenceRegular';
-    }
     
-    section#archives-2.widget.widget_archive ul li a {
-		color: green !important;
-		font-size: 12px !important;
-		font-family: 'GlacialIndifferenceRegular';
-    }
-    section#meta-2.widget.widget_meta ul li a {
-		color: green !important;
-		font-size: 12px !important;
-		font-family: 'GlacialIndifferenceRegular';
-	}
-	section#categories-2.widget_categories ul li a {
-		color: green !important;
-		font-size: 12px !important;
-		font-family: 'GlacialIndifferenceRegular';
-	}
-	
 	
 	</style>
 

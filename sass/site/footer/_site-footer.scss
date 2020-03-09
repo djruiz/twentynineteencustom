@@ -1,53 +1,77 @@
 /* Site footer */
 
 #colophon {
+  .widget-area,
+  .site-info {
+    margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
 
-	.widget-area,
-	.site-info {
-		margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
+    @include media(tablet) {
+      margin: calc(3 * #{$size__spacing-unit}) $size__site-margins;
+    }
+  }
 
-		@include media(tablet) {
-			margin: calc(3 * #{$size__spacing-unit}) $size__site-margins;
-		}
-	}
+  .widget-column {
+    display: flex;
+    flex-wrap: wrap;
+    .widget {
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      width: 100%;
+      word-wrap: break-word;
+      @include media(desktop) {
+        margin-right: calc(3 * #{$size__spacing-unit});
+        width: calc(50% - (3 * #{$size__spacing-unit}));
+      }
+    }
+  }
 
-	.widget-column {
-		display: flex;
-		flex-wrap: wrap;
-		.widget {
-			-webkit-hyphens: auto;
-			-moz-hyphens: auto;
-			-ms-hyphens: auto;
-			hyphens: auto;
-			width: 100%;
-			word-wrap: break-word;
-			@include media(desktop) {
-				margin-right: calc(3 * #{$size__spacing-unit});
-				width: calc(50% - (3 * #{$size__spacing-unit}));
-			}
-		}
-	}
+  .site-info {
+    color: $color__text-light;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
 
-	.site-info {
-		color: $color__text-light;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
-		hyphens: auto;
-		word-wrap: break-word;
+    a {
+      color: inherit;
 
-		a {
-			color: inherit;
+      &:hover {
+        text-decoration: none;
+        color: $color__link;
+      }
+    }
 
-			&:hover {
-				text-decoration: none;
-				color: $color__link;
-			}
-		}
+    .imprint,
+    .privacy-policy-link {
+      margin-right: $size__spacing-unit;
+    }
+  }
+}
 
-		.imprint,
-		.privacy-policy-link {
-			margin-right: $size__spacing-unit;
-		}
-	}
+div#sidebar.col.s4 {
+  font-size: 12px !important;
+}
+section#recent-posts-2.widget.widget_recent_entries ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+
+section#archives-2.widget.widget_archive ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+section#meta-2.widget.widget_meta ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
+}
+section#categories-2.widget_categories ul li a {
+  color: green !important;
+  font-size: 12px !important;
+  font-family: "GlacialIndifferenceRegular";
 }
