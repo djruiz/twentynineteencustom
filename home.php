@@ -18,16 +18,18 @@ get_header();
 ?>
 <div class="container">
 	<div class="row">
-		<div id="posts" class="col  m8 s12 left-align">
+		<div id="posts" style="margin-top: 25px" class="col  m8 s12 left-align">
 		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php
+		$i = 0;
 		if ( have_posts() ) {
-
+			
 			// Load posts loop.
-			while ( have_posts() ) {
+			while ( have_posts() && $i < 5) {
 				the_post();
 				get_template_part( 'template-parts/content/content-excerpt' );
+				$i++;
 			}
 
 			// Previous/next page navigation.
@@ -43,14 +45,14 @@ get_header();
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 		</div>
-		<div id="sidebar" style="" class="col m4 s12">
+		<div id="sidebar" style="margin-top: 25px;" class="col m4 s12">
 			<?php
 				//get_template_part( 'template-parts/footer/footer', 'widgets' );
 				get_template_part('template-parts/sidebar/sidebar');
 			?>
 		</div>
 	</div>
-</div>
+
 
 <style>
 
@@ -62,3 +64,5 @@ get_header();
 <?php
 get_footer();
 ?>
+
+</div>

@@ -10,9 +10,9 @@
  */
 
 ?>
-<div class="post">
-	<div style="margin: 10px 0; " class="divider"></div>
-	<div class="row" style="margin-bottom: 0;">
+<div style="margin: 10px 0;" class="divider"></div>
+<div style="margin: 10px 0;" class="post">
+	<div class="row" style="">
 		<div class="col l6 m12 post-image">
 			<a href="<?php echo get_permalink()?>">
 				<img style="width: 100%; margin: 1.52rem 0 .912rem 0;" src="<?php the_post_thumbnail_url()?>" alt="">
@@ -38,8 +38,4 @@
 				
 		</div>
 	</div>
-	<div class="row excerpt">
-
-	</div>
-	<div style="margin: 10px 0;" class="divider"></div>
 </div>

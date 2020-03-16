@@ -38,7 +38,7 @@ get_header();
 
         </div>
         <div class="intro-image-container">
-          <?php echo wp_get_attachment_image(26, array('400', '1000'), "", array("class" => "intro-image"));  ?>
+          <img class="intro-image" src="<?php echo get_template_directory_uri(); ?>/images/homepage.png" width="400" height="400" alt="" />
         </div>
       </div>
 
@@ -66,7 +66,7 @@ get_header();
           <div class="">
             <div class="card-content center-align" style="">
               <span class="card-title center-align">
-                <?php echo wp_get_attachment_image(25, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/you_request.png" width="125" height="125" alt="" />
               </span>
               <h5>You Request</h5>
               <div class="divider"></div>
@@ -81,7 +81,7 @@ get_header();
           <div class="">
             <div class="card-content center-align" style="">
               <span class="card-title center-align">
-                <?php echo wp_get_attachment_image(23, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/we_create.png" width="125" height="125" alt="" />
               </span>
               <h5>We Create</h5>
               <div class="divider"></div>
@@ -95,7 +95,7 @@ get_header();
           <div class="">
             <div class="card-content center-align" style="">
               <span class="card-title">
-                <?php echo wp_get_attachment_image(24, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/you_receive.png" width="125" height="125" alt="" />
               </span>
               <h5>You Receive</h5>
               <div class="divider"></div>

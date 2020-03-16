@@ -244,6 +244,9 @@ function twentynineteen_scripts() {
 
 	wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/__script.js' ), array(), '1.1', true );
 
+	wp_enqueue_script( 'materialize-js', get_theme_file_uri( '/materialize/materialize.min.js' ), array(), '1.1', true );
+	wp_enqueue_style( 'materialize-css', get_stylesheet_uri('/materialize/materialize.min.css'), array(), wp_get_theme()->get( 'Version' ) );
+
 
 	if ( has_nav_menu( 'menu-1' ) ) {
 		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
@@ -392,8 +395,9 @@ function my_home_page_styles() {
 
 function custom_ppp($query) {
 
-	if (!is_admin() && $query->is_home() && $query->is_main_query() ) {
-			$query->set( 'posts_per_page', '10' );
+	if( (! is_admin()) && (is_post_type_archive(array('post_type1', 'post_type2'))) && ($query->get('post_type') !== 'post') )
+ {
+			$query->set( 'posts_per_page', '1' );
 	}
 }
 add_action( 'pre_get_posts', 'custom_ppp' );
