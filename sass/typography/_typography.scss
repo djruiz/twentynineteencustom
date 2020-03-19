@@ -1,5 +1,4 @@
 html {
-  font-size: $font__size_base;
 }
 
 body {
@@ -8,7 +7,6 @@ body {
   color: $color__text-main;
   //@include font-family($font__body);
   font-weight: 400;
-  font-size: 1em;
   line-height: $font__line-height-body;
   margin: 0;
   text-rendering: optimizeLegibility;

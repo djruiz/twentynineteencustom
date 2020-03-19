@@ -10,7 +10,8 @@
  */
 
 ?>
-<div style="margin: 10px 0;" class="divider"></div>
+<div style="padding: 1px; margin: 10px 0;" class="divider"></div>
+<div style="padding: 1px; margin: 10px 0;" class="divider"></div>
 <div style="margin: 10px 0;" class="post">
 	<div class="row" style="">
 		<div class="col l6 m12 post-image">
@@ -31,11 +32,18 @@
 					 }
 					 echo "<br>Published ";
 					 the_date();
-					 echo "<p>Written by " . get_the_author() . "</p>";
+					 echo "<div class='article-desc'><p>Written by " . get_the_author() . "</p>";
 					 the_excerpt();
+					 echo "</div>"
 					 
 				?>
 				
 		</div>
 	</div>
 </div>
+
+<style>
+	.article-desc {
+		font-size: 15px;
+	}
+</style>

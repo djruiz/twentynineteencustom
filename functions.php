@@ -244,8 +244,8 @@ function twentynineteen_scripts() {
 
 	wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/__script.js' ), array(), '1.1', true );
 
-	wp_enqueue_script( 'materialize-js', get_theme_file_uri( '/materialize/materialize.min.js' ), array(), '1.1', true );
-	wp_enqueue_style( 'materialize-css', get_stylesheet_uri('/materialize/materialize.min.css'), array(), wp_get_theme()->get( 'Version' ) );
+	//wp_enqueue_script( 'materialize-js', get_theme_file_uri( '/materialize/materialize.min.js' ), array(), '1.1', true );
+	//wp_enqueue_style( 'materialize-css', get_stylesheet_uri('/materialize/materialize.min.css'), array(), wp_get_theme()->get( 'Version' ) );
 
 
 	if ( has_nav_menu( 'menu-1' ) ) {

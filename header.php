@@ -17,25 +17,22 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/materialize/materialize.min.css"/>
+	<script src="<?php echo get_template_directory_uri(); ?>/materialize/materialize.min.js"></script>
+	
+	
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <!-- Compiled and minified JavaScript -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- Compiled and minified CSS -->
 
 <style>
 	@font-face{
-				font-family: 'GlacialIndifferenceRegular';
-				src: url('fonts/GlacialIndifference-Regular.otf');
-				 }
+		/*src: url('/fonts/GlacialIndifference-Regular.otf');*/
+		font-family: 'GlacialIndifferenceRegular';
+		src: url('https://contentcucumber.com/fonts/GlacialIndifference-Regular.otf');
+	}		
 
- body {
-				font-family: 'GlacialIndifferenceRegular';
-    }
-
-    
+ 	body {
+				font-family: 'GlacialIndifferenceRegular' !important;
+    	 }
 	
 	</style>
 

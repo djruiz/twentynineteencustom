@@ -1,4 +1,4 @@
-<?php /* Template Name: Account */ ?>
+<?php /* Template Name: Log In */ ?>
 <?php
 
     get_header();

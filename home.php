@@ -22,6 +22,11 @@ get_header();
 		<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php
+echo '<h1>testing</h1>';
+echo get_template_directory_uri();?>/fonts/
+<?php echo get_template_directory_uri();?>/fonts/GlacialIndifference-Regular.otf
+
+		<?php
 		$i = 0;
 		if ( have_posts() ) {
 			
@@ -32,6 +37,10 @@ get_header();
 				$i++;
 			}
 
+			?>
+			<div style="padding: 1px; margin: 10px 0;" class="divider"></div>
+			<div style="padding: 1px; margin: 10px 0;" class="divider"></div>
+			<?php
 			// Previous/next page navigation.
 			twentynineteen_the_posts_navigation();
 
@@ -42,6 +51,7 @@ get_header();
 
 		}
 		?>
+		
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 		</div>

@@ -121,7 +121,8 @@ get_header();
         <h3 class="center-align" class="margin-bottom: 50px; margin-top: 50px;">Testimonials</h3>
         <div class="col  m4 s12 right-align">
           <div class="card-image valign-wrapper center-align" style="margin: auto; margin-top: 25px;">
-          <?php echo wp_get_attachment_image(719, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/mandala.png" width="125" height="99" alt="" />
+          
           </div>
           <div class="">
             <p class="left-align">"I love it! it's me.....but better! Me on writing steroids! Exactly what I wanted. I'm so appreciative of your collective talents. Thank you sincerely! "</p>
@@ -132,7 +133,7 @@ get_header();
         <div class="col m4  s12 right-align">
 
           <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
-          <?php echo wp_get_attachment_image(720, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/payflic.png" width="125" alt="" />
           </div>
           <div class="">
             <p class="left-align">"Content Cucumber is an invaluable asset to Payflic’s content creation efforts. They are extremely professional and competent writers who take the time to understand your business and its audience... These guys are always prepared to discuss our ever changing objectives and aims. They just ‘get’ what we are trying to say to our audience."</p>
@@ -141,7 +142,7 @@ get_header();
         </div>
         <div class="col  m4 s12">
           <div class="card-image valign-wrapper" style="margin: auto; margin-top: 25px;">
-          <?php echo wp_get_attachment_image(721, array('125', '125'), "", array("class" => "img-responsive"));  ?>
+          <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/wagneto.PNG" width="125" alt="" />
           </div>
           <div class="">
             <p class="left-align">"Content Cucumber has helped us to implement a seamless content strategy for our website. Their writers have gone the extra mile to research topics and deliver exceptional content. They have dived into topics that are technical, cultural and marketing related! They are quick, professional, and most of all, fantastic writers!"</p>
@@ -159,7 +160,17 @@ get_header();
 
           <h5 class="center-align" style="margin: 50px 0;">Learn how our clients use Content Cucumber to grow their businesses. Schedule a call with us today!</h5>
           <a href="https://calendly.com/chriscucumber/30min" class="btn green darken-2">Click Here</a>
+<style>
+          @font-face{
+		/*src: url('/fonts/GlacialIndifference-Regular.otf');*/
+		font-family: 'GlacialIndifferenceRegular';
+		src: url('fonts/GlacialIndifference-Regular.otf');
+	}		
 
+ 	body {
+				font-family: 'GlacialIndifferenceRegular' !important;
+    	 }
+</style>
 
         </div>
   </form>
@@ -294,6 +305,7 @@ get_header();
      border-bottom: 1px solid #4caf50 !important;
      box-shadow: 0 1px 0 0 #4caf50 !important;
    }
+  
 </style>
 
 <div class="modal-test" id="modal">
